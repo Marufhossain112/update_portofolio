@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 const Navbar = () => {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    // console.log(window.scrollY);
+    if (window.scrollY >= 65) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
-      <div className="navbar bg-base-100 fixed bg-transparent">
+      <div
+        className={`${
+          navbar ? "navbar" : "hide"
+        } bg-base-100 fixed bg-transparent`}
+      >
         <div className="navbar-start lg:hidden ">
           <div className="dropdown">
             <label tabIndex={0} className="btn btn-ghost lg:hidden">
