@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "../Shared/Navbar/Navbar";
+import "./Main.css";
 
 const Main = () => {
   return (
-    <div>
+    <div className="banner">
       <h2>This is main.</h2>
     </div>
   );
