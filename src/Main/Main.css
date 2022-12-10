@@ -26,6 +26,9 @@ figure img {
   .banner {
     height: 40vh;
   }
+  figure img {
+    margin-left: 50px;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
