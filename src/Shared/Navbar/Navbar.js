@@ -30,7 +30,12 @@ const Navbar = () => {
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
-
+              <li>
+                <Link to={"/projects"}>Projects</Link>
+              </li>
+              <li>
+                <Link to={"/about"}>About</Link>
+              </li>
               <li>
                 <Link to={"/contact"}>Contact</Link>
               </li>
@@ -40,10 +45,16 @@ const Navbar = () => {
         <div className="navbar-center  hidden lg:flex lg:ml-10">
           <ul className="menu menu-horizontal p-0 space-x-3">
             <li>
-              <Link to={"/"}>Home</Link>
+              <a href="/">Home</a>
             </li>
             <li>
-              <Link to={"/contact"}>Contact</Link>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
         </div>

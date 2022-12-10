@@ -10,6 +10,17 @@
 .banner h2 {
   font-family: "League Spartan", sans-serif;
 }
+figure img {
+  /* border: 1px solid rgb(129, 125, 125); */
+  /* border-radius: 12px; */
+  height: 233px;
+  width: 433px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .banner {
