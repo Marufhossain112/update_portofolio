@@ -56,7 +56,7 @@ const Main = () => {
         className="project-parent my-10 text-black text-center text-4xl"
       >
         <h2>My Projects</h2>
-        <div className="projects grid grid-cols-1 lg:grid-cols-3 gap-5 max-w-7xl mx-auto mt-5">
+        <div className="projects grid grid-cols-1 lg:grid-cols-3 lg:gap-5 max-w-7xl mx-auto mt-5">
           <div className="card w-96 bg-base-100 shadow-xl">
             <figure>
               <img

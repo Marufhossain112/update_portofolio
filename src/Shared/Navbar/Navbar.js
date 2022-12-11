@@ -10,9 +10,7 @@ const Navbar = () => {
       setNavbar(false);
     }
   };
-
   window.addEventListener("scroll", changeBackground);
-
   return (
     <div>
       <div
@@ -43,16 +41,19 @@ const Navbar = () => {
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <Link to={"/"}>Home</Link>
+                <a href="/">Home</a>
               </li>
               <li>
-                <Link to={"/projects"}>Projects</Link>
+                <a href="#projects">Projects</a>
               </li>
               <li>
-                <Link to={"/about"}>About</Link>
+                <Link to={"/blogs"}>Blogs</Link>
               </li>
               <li>
-                <Link to={"/contact"}>Contact</Link>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
               </li>
             </ul>
           </div>
