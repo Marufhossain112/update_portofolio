@@ -34,8 +34,8 @@ const Main = () => {
       <div className="banner">
         <div className="h-[100%]  flex flex-col items-center justify-center">
           <h2 className="text-5xl text-rose-300">Welcome</h2>
-          <h3 className="text-white"><span className="text-3xl">
-           I am  </span>Maruf Hossain
+          <h3 className="text-white">
+            <span className="text-3xl">I am </span>Maruf Hossain
           </h3>
           <h4 className="text-2xl text-white">I am a Web Developer</h4>
           <a
@@ -88,7 +88,10 @@ const Main = () => {
             <p className="text-center text-2xl my-2">Travel Hour</p>
 
             <div className="flex justify-around">
-              <button className="btn btn-outline mt-2 mb-5">
+              <button
+                onClick={() => navigate("/traveldetails")}
+                className="btn btn-outline mt-2 mb-5"
+              >
                 Explore site
               </button>
               <a
@@ -110,7 +113,10 @@ const Main = () => {
             <p className="text-center text-2xl my-2">Learning Hub</p>
 
             <div className="flex justify-around">
-              <button className="btn btn-outline mt-2 mb-5">
+              <button
+                onClick={() => navigate("/learningdetails")}
+                className="btn btn-outline mt-2 mb-5"
+              >
                 Explore site
               </button>
               <a

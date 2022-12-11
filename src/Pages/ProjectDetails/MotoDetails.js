@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./MotoDetails.module.css";
 const MotoDetails = () => {
+  const [navbar, setNavbar] = useState(false);
+  const changeBackground = () => {
+    if (window.scrollY >= 65) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  window.addEventListener("scroll", changeBackground);
   return (
     <div>
       {/* navbar */}
       <div>
-        <div className={styles.navbar}>
+        <div className={`${navbar ? " nav-hide" : "navbar"} bg-black`}>
           <div className="navbar-start lg:hidden ">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -168,5 +177,4 @@ const MotoDetails = () => {
     </div>
   );
 };
-
 export default MotoDetails;
