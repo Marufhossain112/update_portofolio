@@ -2,6 +2,7 @@ import emailjs from "@emailjs/browser";
 import React, { useRef } from "react";
 import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
+import AboutMe from "../Pages/AboutMe/AboutMe";
 import "./Main.css";
 
 const Main = () => {
@@ -132,7 +133,7 @@ const Main = () => {
       </div>
       {/* Contact */}
       <div
-        name="contact"
+        id="contact"
         className="project-parent my-10 text-black text-center text-4xl"
       >
         <h2>Contact Me</h2>
@@ -181,6 +182,14 @@ const Main = () => {
             Send
           </button>
         </form>
+      </div>
+      {/* About */}
+      <div
+        id="about"
+        className="project-parent my-10 text-black text-center text-4xl"
+      >
+        <h2 className="mb-3">About Me</h2>
+        <AboutMe></AboutMe>
       </div>
     </div>
   );
