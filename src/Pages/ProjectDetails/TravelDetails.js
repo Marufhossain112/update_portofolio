@@ -17,7 +17,7 @@ const TravelDetails = () => {
     <div>
       {/* navbar */}
       <div>
-        <div className={`${navbar ? " nav-hide" : "navbar"} bg-black`}>
+        <div className={`${navbar ? "nav-hide" : "navbar"} bg-black`}>
           <div className="navbar-start lg:hidden ">
             <div className="dropdown">
               <label tabIndex={0} className="btn btn-ghost lg:hidden">
