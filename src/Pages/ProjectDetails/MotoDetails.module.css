@@ -1,0 +1,15 @@
+.navbar {
+  background: black;
+  color: white;
+  padding: 14px;
+  width: 100%;
+}
+.navbar ul li {
+  border: 1px solid;
+  border-radius: 12px;
+  border-color: white;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
