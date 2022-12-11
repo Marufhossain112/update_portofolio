@@ -42,19 +42,23 @@ const MotoDetails = () => {
                   <Link to={"/"}>Home</Link>
                 </li>
                 <li>
-                  <Link to={"/projects"}>Projects</Link>
+                  <Link to={"/#projects"}>Projects</Link>
                 </li>
                 <li>
-                  <Link to={"/about"}>About</Link>
+                  <Link to={"/#about"}>About</Link>
                 </li>
                 <li>
-                  <Link to={"/contact"}>Contact</Link>
+                  <Link to={"/#contact"}>Contact</Link>
                 </li>
               </ul>
             </div>
           </div>
           <div className="navbar-center  hidden lg:flex lg:ml-10">
-            <ul className="menu menu-horizontal p-0 space-x-3">
+            <ul
+              className={`${
+                navbar ? "" : "hidden"
+              } menu menu-horizontal p-0 space-x-3`}
+            >
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
@@ -62,10 +66,10 @@ const MotoDetails = () => {
                 <Link to={"/#projects"}>Projects</Link>
               </li>
               <li>
-                <a href="#about">About</a>
+                <Link to={"/#about"}>About</Link>
               </li>
               <li>
-                <a href="#contact">Contact</a>
+                <Link to={"/#contact"}>Contact</Link>
               </li>
             </ul>
           </div>

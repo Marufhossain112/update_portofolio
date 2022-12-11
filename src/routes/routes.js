@@ -28,20 +28,24 @@ export const router = createBrowserRouter([
         path: "/blogs",
         element: <Blogs></Blogs>,
       },
+      {
+        path: "/motodetails",
+        element: <MotoDetails></MotoDetails>,
+      },
     ],
   },
-  {
-    path: "/motodetails",
-    element: <MotoDetails></MotoDetails>,
-  },
-  {
-    path: "/traveldetails",
-    element: <TravelDetails></TravelDetails>,
-  },
-  {
-    path: "/learningdetails",
-    element: <LearningDetails></LearningDetails>,
-  },
+  // {
+  //   path: "/motodetails",
+  //   element: <MotoDetails></MotoDetails>,
+  // },
+  // {
+  //   path: "/traveldetails",
+  //   element: <TravelDetails></TravelDetails>,
+  // },
+  // {
+  //   path: "/learningdetails",
+  //   element: <LearningDetails></LearningDetails>,
+  // },
   // {
   //   path: "/subhome",
   //   element: <SubHome></SubHome>,

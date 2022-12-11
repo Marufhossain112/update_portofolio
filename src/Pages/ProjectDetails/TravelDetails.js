@@ -56,7 +56,11 @@ const TravelDetails = () => {
             </div>
           </div>
           <div className="navbar-center  hidden lg:flex lg:ml-10">
-            <ul className="menu menu-horizontal p-0 space-x-3">
+            <ul
+              className={`${
+                navbar ? "" : "hidden"
+              } menu menu-horizontal p-0 space-x-3`}
+            >
               <li>
                 <Link to={"/"}>Home</Link>
               </li>
