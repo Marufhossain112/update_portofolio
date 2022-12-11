@@ -4,7 +4,6 @@ import "./Navbar.css";
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
   const changeBackground = () => {
-    // console.log(window.scrollY);
     if (window.scrollY >= 65) {
       setNavbar(true);
     } else {
@@ -16,7 +15,7 @@ const Navbar = () => {
     <div>
       <div
         className={`${
-          navbar ? "navbar" : "hide"
+          navbar ? "navbar scrolled" : "navbar"
         } bg-base-100 fixed bg-transparent`}
       >
         <div className="navbar-start lg:hidden ">

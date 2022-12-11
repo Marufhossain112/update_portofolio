@@ -1,3 +1,6 @@
+.navbar {
+  padding: 15px 0px;
+}
 .navbar ul li {
   color: white;
   border: 1px solid black;
@@ -8,6 +11,19 @@
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
 }
-.hide {
-  display: none;
+.scrolled {
+  /*display: block;
+  */
+  z-index: 999;
+  width: 100%;
+  background-color: black;
+  transition: all 0.9s ease-in;
+  -webkit-transition: all 0.9s ease-in;
+  -moz-transition: all 0.9s ease-in;
+  -ms-transition: all 0.9s ease-in;
+  -o-transition: all 0.9s ease-in;
+}
+.scrolled ul li {
+  border-color: white;
+  transition: all 0.9s ease-in;
 }
