@@ -51,13 +51,10 @@ const Main = () => {
         </div>
       </div>
       {/* Projects */}
-      <div
-        id="projects"
-        className="project-parent my-10 text-black text-center text-4xl"
-      >
-        <h2>My Projects</h2>
-        <div className="projects grid grid-cols-1 lg:grid-cols-3 lg:gap-5 max-w-7xl mx-auto mt-5">
-          <div className="card w-96 bg-base-100 shadow-xl">
+      {/* <div id="projects" className="project-parent ">
+        <h2>My Projects</h2> */}
+        <div className="my-10 text-black text-center text-4xl  max-w-xl  md:max-w-3xl lg:max-w-7xl projects grid grid-cols-1   md:grid-cols-2 lg:grid-cols-3 md:gap-10  lg:gap-5  mx-auto mt-5">
+          <div className="card w-96 shadow-xl">
             <figure>
               <img
                 src="https://i.ibb.co/0KkDNrY/moto-rangers.png"
@@ -82,7 +79,7 @@ const Main = () => {
               </a>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 shadow-xl">
             <figure>
               <img src="https://i.ibb.co/5xsPvNn/travel.png" alt="Shoes" />
             </figure>
@@ -104,7 +101,7 @@ const Main = () => {
               </a>
             </div>
           </div>
-          <div className="card w-96 bg-base-100 shadow-xl">
+          <div className="card w-96 shadow-xl">
             <figure>
               <img
                 src="https://i.ibb.co/4STfv6t/auth-router-context-3dfed-web-app.png"
@@ -130,7 +127,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
       {/* Contact */}
       <div
         id="contact"

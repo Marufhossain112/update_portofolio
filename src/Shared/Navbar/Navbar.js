@@ -16,7 +16,7 @@ const Navbar = () => {
       <div
         className={`${
           navbar ? "navbar scrolled" : "navbar"
-        } bg-base-100 fixed bg-transparent`}
+        }  fixed bg-transparent`}
       >
         <div className="navbar-start lg:hidden ">
           <div className="dropdown">
@@ -38,7 +38,7 @@ const Navbar = () => {
             </label>
             <ul
               tabIndex={0}
-              className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+              className="menu menu-compact dropdown-content mt-3 p-2 shadow  rounded-box w-52"
             >
               <li>
                 <a href="/">Home</a>

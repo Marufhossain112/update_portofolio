@@ -11,10 +11,12 @@
   font-family: "League Spartan", sans-serif;
 }
 figure img {
-  /* border: 1px solid rgb(129, 125, 125); */
-  /* border-radius: 12px; */
+  /*border: 1px solid rgb(129, 125, 125);
+  */ /*border-radius: 12px;
+  */
   height: 233px;
   width: 433px;
+  border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
@@ -22,17 +24,27 @@ figure img {
 }
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .banner {
-    height: 40vh;
-  }
+@media only screen and (max-width: 480px) {
   figure img {
-    margin-left: 50px;
+    height: 200px;
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 600px) {
+  .banner {
+    height: 70vh;
+  }
+  .projects {
+    margin-left: 17%;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+  .projects {
+    margin-left: 17%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -41,4 +53,8 @@ figure img {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+}
+/*  Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1030px) and (max-width: 1240px) {
+
 }
